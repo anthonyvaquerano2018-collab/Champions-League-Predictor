@@ -41,3 +41,18 @@ Python, pandas, requests, scipy, matplotlib, python-dotenv, football-data.org AP
 ## Notes
 
 Early in the season, ratings are still close together, so title probabilities spread out. They sharpen as more matches are played.
+## Example output
+
+### Title probabilities
+
+![Champions League winner probability](win_probability.png)
+
+Simulated probability of each team winning the Champions League. The model projects the rest of the league phase, seeds the knockout bracket, and simulates the whole competition 5,000 times. Each bar shows how often a team won the title. Teams projected to miss the knockout rounds appear at 0%.
+
+### Team strength
+
+!![Top 15 teams by Elo rating](elo_ratings.png)
+
+Current Elo ratings for the top 15 teams, built from completed match results. A team's rating rises when it beats expectations and falls when it underperforms, so the chart updates as new results come in.
+
+Early in the season, ratings are still close together, so title probabilities are bunched and shift from run to run. They sharpen as more matches are played.
